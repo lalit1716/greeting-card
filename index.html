@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target Shooting Game</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video autoplay loop id="bgVideo">
+        <source src="./videos/heart_video.mp4" type="video/mp4" />
+      </video>
+
+      <div id="game-container">
+        <div class="box">
+          <h1>Can We Date? 👩‍❤️‍👨 </h1>
+          <div class="btn-container">
+            <button id="yes" onclick="changeVideo2()" onmouseenter="changeVideo()">Yes</button>
+           <button id="target" >No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --black: #000000;
+  --white: #fff;
+  --color-A: #5a9052;
+  --cinzel-font: "Cinzel", serif;
+  --nunito-font: "Nunito", sans-serif;
+}
+
+/* Single class starts here  */
+.cinzel-font {
+  font-family: var(--cinzel-font);
+  text-transform: capitalize;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#game-container {
+  padding: 50px;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 0px solid #fff;
+  box-shadow: inset 0 0 30px #ffffff45;
+  border-radius: 30px;
+  margin: 5px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box h1 {
+  color: #fff;
+  font-family: var(--cinzel-font);
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff;
+}
+
+.box .btn-container {
+  width: 100%;
+}
+
+#yes {
+  margin-left: 120px;
+  padding: 6px 22px;
+  font-size: 25px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+
+  background: transparent;
+  box-shadow: inset 0 0 10px #fff, inset 0 0 10px #fff;
+
+  
+
+}
+
+#yes:is(:hover,:focus){
+  cursor: pointer;
+  box-shadow: 0 0 10px #3be460, 0 0 10px #3be460;
+}
+
+
+#target {
+  position: absolute;
+  left: 290px;
+  padding: 6px 25px;
+  font-size: 25px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+
+  background: transparent;
+  box-shadow: inset 0 0 10px #fff, inset 0 0 10px #fff;
+
+  transition: top 0.3s, left 0.3s;
+  transition-delay: 0.5s;
+  cursor: pointer;
+}
+
+#target:is(:hover,:focus) {
+ 
+  box-shadow: 0 0 10px #eb4322,  0 0 10px #eb4322;
+
+}
