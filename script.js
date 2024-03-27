@@ -1,7 +1,4 @@
 
- const noVideo = "./videos/no_no_no_video.mp4";
- const yesVideo = "./videos/yes_video.mp4";
- const thankyouVideo = "./videos/Thankyou_video.mp4";
 
 
 const target = document.getElementById("target");
@@ -22,7 +19,7 @@ function moveTarget() {
 target.addEventListener("mouseenter", function () {
   moveTarget();
   var video = document.getElementById('bgVideo');
-  video.src = noVideo;
+  video.src = "./videos/no_no_no_video.mp4";
   video.load();
 });
 
@@ -32,13 +29,13 @@ target.addEventListener("mouseenter", function () {
 
 function changeVideo() {
   var video = document.getElementById('bgVideo');
-  video.src = yesVideo;
+  video.src = "./videos/yes_video.mp4";
   video.load();
 }
 
 function changeVideo2() {
   var video = document.getElementById('bgVideo');
-  video.src = thankyouVideo;
+  video.src = "./videos/Thankyou_video.mp4";
   video.load();
   
 }
